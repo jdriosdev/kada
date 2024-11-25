@@ -7,11 +7,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const ballet = localFont({
-  src: "./fonts/Ballet-Regular-VariableFont_opsz.ttf",
-  variable: "--font-ballet",
-  weight: "100 900",
-});
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",

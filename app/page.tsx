@@ -1,6 +1,6 @@
 
 import styles from "./page.module.css";
-import {Ballet, Quicksand} from 'next/font/google'
+import {Ballet, Quicksand} from "next/font/google";
 
 const ballet = Ballet({ subsets: ['latin'] })
 const quicksand = Quicksand({ subsets: ['latin'] })
@@ -47,7 +47,7 @@ export default function Home() {
         style={{
           textAlign: 'center'
         }}
-        >Two hearts, one love, and a lifetime together. You're invited!</h3>
+        >Two hearts, one love, and a lifetime together. You are invited!</h3>
         <h1  className={`${ballet.className} ${styles.names}`}>Karen & Daniel</h1>
         <p className={`${quicksand.className}`}>7 | December | 2024</p>
         <p className={`${quicksand.className}`}>1:30 PM</p>
