@@ -187,9 +187,9 @@ a.secondary {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 600px;
+  min-height: 735px;
   width: 100%;
   max-width: 450px;
 
