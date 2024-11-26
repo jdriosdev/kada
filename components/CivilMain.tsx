@@ -1,20 +1,20 @@
 import React from 'react'
 import styles from "../app/page.module.css";
 
-import {Ballet, Quicksand} from "next/font/google";
+import {Quicksand} from "next/font/google";
+import Names from './Names';
+import TextCustom from './TextCustom';
 
-const ballet = Ballet({ subsets: ['latin'] })
+
 const quicksand = Quicksand({ subsets: ['latin'] })
 
 function CivilMain() {
   return (
-    <><h3 
-    className={`${quicksand.className}`}
-    style={{
-      textAlign: 'center'
-    }}
-    >Two hearts, one love, and a lifetime together. You are invited!</h3>
-    <h1  className={`${ballet.className} ${styles.names}`}>Karen & Daniel</h1>
+    <>
+    <TextCustom 
+    text='Two hearts, one love, and a lifetime together. You are invited!'
+    />
+    <Names isBig/>
     <p className={`${quicksand.className}`}>7 | December | 2024</p>
     <p className={`${quicksand.className}`}>1:30 PM</p>
     <p className={`${quicksand.className}`}>Oak Park Beach - Cronulla</p>

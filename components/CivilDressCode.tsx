@@ -1,8 +1,17 @@
 import React from 'react'
+import Names from './Names'
+import TextCustom from './TextCustom'
+
 
 function CivilDressCode() {
   return (
-    <div>CivilDressCode</div>
+    <div>
+      <Names  />
+      <TextCustom 
+      text='Dress to impress, but keep it beach-friendly! Think semi-formal: light, breezy, and comfortable. We kindly ask you to avoid wearing light blue, as it’s the color of the day.'
+      />
+      
+    </div>
   )
 }
 
