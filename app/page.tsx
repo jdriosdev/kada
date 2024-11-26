@@ -45,7 +45,7 @@ const [itemToShow, setItemToShow] = useState(menuItems[0])
     <div 
     className="bg-body"
     style={{
-      height: '100vh',
+      height: '120vh',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
