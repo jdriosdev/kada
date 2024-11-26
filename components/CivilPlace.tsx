@@ -1,7 +1,6 @@
 import React from 'react'
 import TextCustom from './TextCustom'
 import Names from './Names'
-import Image from 'next/image'
 import styles from '../app/page.module.css'
 
 function CivilPlace() {
@@ -19,9 +18,8 @@ function CivilPlace() {
 </div>
 </a>
 
-<TextCustom text='Oak Park Beach - Cronulla' />
-<TextCustom text='Sydney' />
-
+      <TextCustom text='Oak Park Beach - Cronulla' />
+      <TextCustom text='Sydney' />
     </div>
   )
 }
