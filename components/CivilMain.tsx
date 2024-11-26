@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from "../app/page.module.css";
 
 import {Quicksand} from "next/font/google";
 import Names from './Names';

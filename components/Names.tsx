@@ -1,5 +1,5 @@
 import React from 'react'
-import {Ballet, Quicksand} from "next/font/google";
+import {Ballet} from "next/font/google";
 
 import styles from "../app/page.module.css";
 
