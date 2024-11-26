@@ -6,6 +6,9 @@ import CivilDressCode from "@/components/CivilDressCode";
 import CivilPlace from "@/components/CivilPlace";
 import CivilPhoto from "@/components/CivilPhoto";
 
+import { PiDressFill, PiMapPinAreaFill , PiCameraFill, PiCalendarHeartFill, PiEyeSlashFill, PiEyeFill   } from "react-icons/pi";
+
+
 
 export default function Home() {
 
@@ -13,22 +16,22 @@ export default function Home() {
 
   const menuItems = [{
     label: 'Invitation',
-    icon: '',
+    icon: ()=> <PiCalendarHeartFill />,
     component: () => <CivilMain /> 
   },
   {
     label: 'Dress Code',
-    icon: '',
+    icon: ()=><PiDressFill />,
     component: () => <CivilDressCode /> 
   },
   {
     label: 'Place',
-    icon: '',
+    icon: ()=><PiMapPinAreaFill/>,
     component: () => <CivilPlace /> 
   },
   {
     label: 'Photo',
-    icon: '',
+    icon: ()=><PiCameraFill />,
     component: () => <CivilPhoto/> 
   }]
 
@@ -46,7 +49,8 @@ const [itemToShow, setItemToShow] = useState(menuItems[0])
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
-    }} > 
+    }} 
+    > 
       
     </div>
     <button style={{
@@ -57,8 +61,9 @@ const [itemToShow, setItemToShow] = useState(menuItems[0])
       margin: '0 2px',
       backgroundColor: '#2A3663',
       border: 'none',
-      fontSize: '1rem'
-    }} onClick={()=> setShowCard(prev => !prev)}>{showCard ? 'Show Photo' : 'Show Details'}</button>
+      fontSize: '1.5rem',
+      borderRadius: '5px'
+    }} onClick={()=> setShowCard(prev => !prev)}>{showCard ? <PiEyeSlashFill/> : <PiEyeFill />}</button>
     <GlassCard showCard={showCard}>
     
         {itemToShow.component()}
@@ -74,10 +79,13 @@ const [itemToShow, setItemToShow] = useState(menuItems[0])
   margin: '0 2px',
   backgroundColor: '#2A3663',
   border: 'none',
-  fontSize: '1rem'
+  fontSize: '1.5rem',
+  borderRadius: '5px'
 
  }}
- onClick={()=> setItemToShow(menuItems[index])} key={item.label}>{item.label}</button>)}
+ onClick={()=> setItemToShow(menuItems[index])} key={item.label}>
+  {item.icon()}
+ </button>)}
 </div>
     </GlassCard>
     
