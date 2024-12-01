@@ -1,12 +1,33 @@
-import Link from 'next/link'
-import React from 'react'
+'use client'
+import TextCustom from '@/components/TextCustom'
+import React, { useState } from 'react'
+import CustomLayout from '../layouts/CustomLayout'
+import PhotosList from '@/components/PhotosList'
+import Spacer from '@/components/Spacer'
 
 function Photos() {
+  const [photos] = useState([])
   return (
-    <>
-    <div>We are working on this page!</div>
-    <Link href='/'>Go Home</Link>
-    </>
+      <CustomLayout>
+        <>
+        <TextCustom dark text='Thanks for sharing your memories with us' />
+        <Spacer />
+        <PhotosList photos={photos} />
+        <div style={{
+          display: 'flex'
+        }}>
+
+        <a href='/' 
+        style={{
+          color: 'black',
+          margin: '10px auto'
+        }}
+        >Home</a>
+        </div>
+        </>
+      </CustomLayout>
+      
+  
   )
 }
 

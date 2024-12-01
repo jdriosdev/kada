@@ -6,7 +6,8 @@ import CivilDressCode from "@/components/CivilDressCode";
 import CivilPlace from "@/components/CivilPlace";
 import CivilPhoto from "@/components/CivilPhoto";
 
-import { PiDressFill, PiMapPinAreaFill , PiCameraFill, PiCalendarHeartFill, PiEyeSlashFill, PiEyeFill   } from "react-icons/pi";
+import {PiBowlFoodFill,  PiDressFill, PiMapPinAreaFill , PiCameraFill, PiCalendarHeartFill, PiEyeSlashFill, PiEyeFill   } from "react-icons/pi";
+import CivilLunch from "@/components/CivilLunch";
 
 
 
@@ -33,7 +34,14 @@ export default function Home() {
     label: 'Photo',
     icon: ()=><PiCameraFill />,
     component: () => <CivilPhoto/> 
-  }]
+  },
+  {
+    label: 'Lunch',
+    icon: ()=><PiBowlFoodFill />,
+    component: () => <CivilLunch/> 
+  },
+
+]
 
 const [itemToShow, setItemToShow] = useState(menuItems[0])
 

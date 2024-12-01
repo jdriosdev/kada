@@ -99,14 +99,24 @@ a.primary {
   gap: 8px;
 }
 
-.mapImg {
-  background-image: url('./imgs/map.png');
+.linkImg {
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 200px;
   margin: 20px 0;
   border-radius: 16px;
+
+}
+
+.mapImg {
+  background-image: url('./imgs/map.png');
+
+}
+
+.lunchImg {
+  background-image: url('./imgs/lunch.png');
+
 }
 
 a.secondary {
@@ -215,4 +225,10 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.customLayout {
+  padding-top: 2rem;
+  background: white;
+  min-height: 100vh;
 }
