@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import CustomLayout from '../layouts/CustomLayout'
 import PhotosList from '@/components/PhotosList'
 import Spacer from '@/components/Spacer'
+import Link from 'next/link'
 
 function Photos() {
   const [photos] = useState([])
@@ -17,12 +18,12 @@ function Photos() {
           display: 'flex'
         }}>
 
-        <a href='/' 
+        <Link href='/' 
         style={{
           color: 'black',
           margin: '10px auto'
         }}
-        >Home</a>
+        >Home</Link>
         </div>
         </>
       </CustomLayout>
