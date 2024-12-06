@@ -113,9 +113,9 @@ src={selectedImage.src} alt={selectedImage.name} />
 }
 <Spacer />
 
-      {uploadProgress > 0 && 
+      {!uploadedUrl && uploadProgress > 0 && 
       
-      <TextCustom text={`Upload Progress: ${uploadProgress}%`} />
+      <TextCustom text={`Uploading...`} />
       
       }
       <Spacer />
