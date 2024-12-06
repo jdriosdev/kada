@@ -5,6 +5,7 @@ import Names from './Names'
 import TextCustom from './TextCustom'
 import Spacer from './Spacer'
 import axios, { AxiosProgressEvent } from "axios";
+import Image from 'next/image'
 
 const cloudName = 'dcdbegg7g'
 
@@ -52,7 +53,7 @@ function CivilPhoto() {
       setSelectedImage(null)
       setError(null);
     } catch (err) {
-      setError("Failed to upload the image.");
+      setError(`${err}, Failed to upload the image.`);
     }
   };
 
@@ -91,9 +92,24 @@ function CivilPhoto() {
           <TextCustom text='Upload' />
         </button>
       </div>
-{selectedImage && <img width={'100%'} style={{
-  margin: '20px auto'
-}} src={selectedImage.src} alt={selectedImage.name} />}
+{selectedImage && 
+<div style={{
+  margin: '20px auto',
+  width: ' 100%',
+  height: '300px',
+position: 'relative'
+
+}}>
+
+<Image
+fill
+layout='fill'
+objectFit='contain'
+
+ 
+src={selectedImage.src} alt={selectedImage.name} />
+</div>
+}
 <Spacer />
 
       {uploadProgress > 0 && 
