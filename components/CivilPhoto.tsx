@@ -16,6 +16,8 @@ function CivilPhoto() {
   const [uploadedUrl, setUploadedUrl] = useState(null);
   const [error, setError] = useState<null|string>(null);
 
+
+  //@ts-ignore
   const handleFileChange = (e:any ) => {
     setUploadedUrl(null)
     setUploadProgress(0)
