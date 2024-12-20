@@ -16,7 +16,9 @@ function TextCustom({text, dark}: TextCustomTypes) {
     style={{
       textAlign: 'center',
       textTransform: 'uppercase',
-    color: dark ? 'rgb(0,0,0)' : 'rgb(255,255,255)'
+    color: dark ? 'rgb(0,0,0)' : 'rgb(255,255,255)',
+    maxWidth: '600px',
+    margin:'0 auto'
     }}
     >{text}</p>
   )

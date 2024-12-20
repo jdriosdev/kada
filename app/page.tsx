@@ -1,13 +1,13 @@
 'use client'
 import GlassCard from "@/components/GlassCard";
-import CivilMain from "@/components/CivilMain";
+import WeddingDressCode from "@/components/WeddingDressCode";
+import WeddingLunch from "@/components/WeddingLunch";
+import WeddingMain from "@/components/WeddingMain";
+import WeddingPhoto from "@/components/WeddingPhoto";
+import WeddingPlace from "@/components/WeddingPlace";
 import { useState } from "react";
-import CivilDressCode from "@/components/CivilDressCode";
-import CivilPlace from "@/components/CivilPlace";
-import CivilPhoto from "@/components/CivilPhoto";
 
 import {PiBowlFoodFill,  PiDressFill, PiMapPinAreaFill , PiCameraFill, PiCalendarHeartFill, PiEyeSlashFill, PiEyeFill   } from "react-icons/pi";
-import CivilLunch from "@/components/CivilLunch";
 
 
 
@@ -18,27 +18,27 @@ export default function Home() {
   const menuItems = [{
     label: 'Invitation',
     icon: ()=> <PiCalendarHeartFill />,
-    component: () => <CivilMain /> 
+    component: () => <WeddingMain /> 
   },
   {
     label: 'Dress Code',
     icon: ()=><PiDressFill />,
-    component: () => <CivilDressCode /> 
+    component: () => <WeddingDressCode /> 
   },
   {
     label: 'Place',
     icon: ()=><PiMapPinAreaFill/>,
-    component: () => <CivilPlace /> 
+    component: () => <WeddingPlace /> 
   },
   {
     label: 'Photo',
     icon: ()=><PiCameraFill />,
-    component: () => <CivilPhoto/> 
+    component: () => <WeddingPhoto/> 
   },
   {
     label: 'Lunch',
     icon: ()=><PiBowlFoodFill />,
-    component: () => <CivilLunch/> 
+    component: () => <WeddingLunch/> 
   },
 
 ]
@@ -51,7 +51,7 @@ const [itemToShow, setItemToShow] = useState(menuItems[0])
     <>
    
     <div 
-    className="bg-body"
+    className="wedding-bg-body"
     style={{
       height: '120vh',
       display: 'flex',

@@ -6,6 +6,7 @@ import TextCustom from './TextCustom'
 import Spacer from './Spacer'
 import axios, { AxiosProgressEvent } from "axios";
 import Image from 'next/image'
+import Link from 'next/link'
 
 const cloudName = 'dcdbegg7g'
 
@@ -127,6 +128,17 @@ src={selectedImage.src} alt={selectedImage.name} />
 
       {error && <p style={{ color: "red" }}>{error}</p>}
 
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  paddingTop: '3rem'
+}}>
+
+<Link href='/photos'>
+<TextCustom text='See photos uploaded'></TextCustom>
+</Link>
+</div>
     </div>
   )
 }
