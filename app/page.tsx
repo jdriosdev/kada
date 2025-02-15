@@ -1,14 +1,12 @@
 "use client";
 import GlassCard from "@/components/GlassCard";
 import WeddingDressCode from "@/components/WeddingDressCode";
-import WeddingLunch from "@/components/WeddingLunch";
 import WeddingMain from "@/components/WeddingMain";
 import WeddingPhoto from "@/components/WeddingPhoto";
 import WeddingPlace from "@/components/WeddingPlace";
 import { useState } from "react";
 
 import {
-  PiBowlFoodFill,
   PiDressFill,
   PiMapPinAreaFill,
   PiCameraFill,
