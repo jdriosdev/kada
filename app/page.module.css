@@ -114,6 +114,11 @@ a.primary {
 
 }
 
+.mapImgWedding {
+  background-image: url('./imgs/map-wedding.png');
+
+}
+
 .lunchImg {
   background-image: url('./imgs/lunch.png');
 
