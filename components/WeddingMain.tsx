@@ -14,8 +14,16 @@ function WeddingMain() {
       <Names isBig />
       <p className={`${quicksand.className}`}>22 | March | 2025</p>
       <p className={`${quicksand.className}`}>1:30 PM</p>
-      <p className={`${quicksand.className}`}>CGMJI - Sydney</p>
-      <p className={`${quicksand.className}`}>Polish CLub Ashfield</p>
+      <p className={`${quicksand.className}`}>
+        Church Of God Ministry of Jesus Christ International- Sydney
+      </p>
+      <Spacer />
+      <p
+        className={`${quicksand.className}`}
+        style={{ textTransform: "capitalize" }}
+      >
+        The ceremony will be held at Polish Club Ashfield
+      </p>
       <Spacer />
       <a
         className={`${quicksand.className}`}
